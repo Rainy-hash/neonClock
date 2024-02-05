@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 10px;
+}
+
+.text {
+    font-size: 75px; 
+}
+
+.text:hover {
+    cursor: default;
+}
+
+.glow {
+    color: white;
+    animation: glow_color .5s ease-in-out infinite alternate;
+}
+
+@keyframes glow_color {
+    0% {
+        text-shadow: 0 0 10px #ff1177, 0 0 20px #db249f, 0 0 30px #285aeb;
+    }
+    100% {
+        text-shadow: 0 0 5px #ff1177, 0 0 10px #db249f, 0 0 15px #285aeb;
+    }
+}
